@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+h1,h2{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+body{
+    background-image: linear-gradient(30deg, rgb(237, 162, 108), rgb(235, 122, 122));
+}
+div{
+    border: none;
+    border-radius: 25px;
+    width: 400px;
+    text-align: center;
+    background:rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+.form-container{
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+label{
+    text-align: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    font-family: "Poppins", sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    align-self: flex-start;
+    margin-left: 10px;
+    
+}
+input, textarea{
+    border: 2px solid #ddd;
+    border-radius: 7px;
+    font-size: medium;
+    font-weight: bold;
+    width: 80%;
+    padding: 8px;
+    font-size:large;
+    font-weight: bold;
+    outline: none;
+    transition: 0.4s;
+    
+}
+
+input:focus, textarea:focus{
+    border-color: rgb(211, 124, 58);
+    box-shadow: 1px 0 3px rgba(10, 10, 10, 0.2);
+}
+
+
+textarea{
+    resize: none;
+    height: 60px;
+}
+.buttoncontainer{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+div .buttoncontainer{
+    border: none;
+    display: inline-flex;
+    
+}
+.submit, .reset{
+    font-family: "Poppins", sans-serif;
+    font-size: large;
+    font-weight: bold;
+    width: 120px;
+    padding: 0px 10px;
+    border-radius: 10px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+}
+.submit{
+    background-color: rgb(157, 250, 142);
+}
+.reset{
+    background-color: rgb(255, 127, 127);
+}
+
+
+
+.submit:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.reset:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+.submit:active, .reset:active{
+    transform: scale(0.9);
+    transition: 0.1s;
+    
+}
+.submit:active{
+    background-color: rgb(31, 215, 31);
+}
+.reset:active{
+    background-color: rgb(249, 47, 47);
+}
